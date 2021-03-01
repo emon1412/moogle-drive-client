@@ -1,1 +1,5 @@
-{}
+{
+  "serverUrl": "http://localhost:8085",
+  "algoliaAppID": "",
+  "algoliaAPIKey": ""
+}

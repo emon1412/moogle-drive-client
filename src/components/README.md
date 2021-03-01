@@ -1,0 +1,1 @@
+config.json and local.config.json must be created and placed in /config. Use example.json as, well, example.
