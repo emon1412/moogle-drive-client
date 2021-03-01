@@ -1,0 +1,15 @@
+.uploaded-file {
+  margin-bottom: 20px;
+}
+
+.name-input-row, .tags-input-row {
+  margin-bottom: 20px;
+}
+
+.add-or-edit-file > button {
+  margin-right: 10px;
+}
+
+.fa-file {
+  margin-right: 20px;
+}

@@ -1,0 +1,10 @@
+.search-text-input > .endcap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: absolute;
+    width: 20px;
+    right: 15px;
+    height: 100%;
+}

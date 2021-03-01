@@ -1,0 +1,13 @@
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0 30px 0;
+}
+
+.controls-row > .search-text-input-container {
+  width: 85%;
+}
+
+.files-table {
+  margin-top: 50px;
+}

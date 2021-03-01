@@ -1,0 +1,12 @@
+.dropzone-upload {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed #cccccc;
+  min-height: 200px;
+  margin-bottom: 30px;
+}
+
+.dropzone-upload:hover {
+  cursor: pointer;
+}
