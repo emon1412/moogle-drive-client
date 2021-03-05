@@ -1,4 +1,4 @@
-.search-text-input > .endcap {
+/* .search-text-input > .endcap {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7,4 +7,59 @@
     width: 20px;
     right: 15px;
     height: 100%;
+} */
+
+/* $shadow: .3rem .3rem .6rem #c8d0e7, 
+-.2rem -.2rem .5rem #FFFFFF;
+$inner-shadow: inset .2rem .2rem .5rem #c8d0e7, 
+inset -.2rem -.2rem .5rem #FFFFFF;
+
+:root {
+    --primary-light: #8abdff;
+    --primary: #6d5dfc;
+    --primary-dark: #5b0eeb;
+    
+    --white: #FFFFFF;
+    --greyLight-1: #E4EBF5;
+    --greyLight-2: #c8d0e7;
+    --greyLight-3: #bec8e4;
+    --greyDark: #9baacf;
+  } */
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search__input {
+  width: 100%;
+  height: 4rem;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.4rem;
+  padding-left: 3.8rem;
+  box-shadow: inset .2rem .2rem .5rem #c8d0e7, 
+  inset -.2rem -.2rem .5rem #FFFFFF;
+  background: none;
+  font-family: inherit;
+  color: #9baacf;
+}
+
+.search__input::placeholder { color: #bec8e4; }
+
+.search__input:focus { 
+  outline: none; 
+  box-shadow: .3rem .3rem .6rem #c8d0e7, 
+  -.2rem -.2rem .5rem #FFFFFF;
+}
+
+.search > .search__icon {
+  height: 2rem;
+  position: absolute;
+  font-size: 2rem;
+  padding: 0 1rem;
+  display: flex;
+  color: #9baacf;
+  transition: 0.3s ease;
 }

@@ -1,0 +1,25 @@
+.btn {
+  padding: 0;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: .3rem .3rem .6rem #c8d0e7, 
+  -.2rem -.2rem .5rem #FFFFFF;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: .3s ease;
+  grid-column: 1 / 2;
+  grid-row: 5 / 6;
+  color: #9baacf;
+  background-color: #E4EBF5;
+  font-size: 1.4rem;
+}
+
+.btn:hover { color: #6d5dfc; }
+.btn:active {
+  box-shadow: inset .2rem .2rem .5rem #c8d0e7, 
+  inset -.2rem -.2rem .5rem #FFFFFF;
+}

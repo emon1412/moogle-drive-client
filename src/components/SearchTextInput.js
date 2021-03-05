@@ -22,29 +22,23 @@ class SearchTextInput extends Component {
     const { value = '', disabled = false, placeholder, onChange, className = '' } = this.props;
 
     return (
-      <div className={cns(className, 'search-text-input-container')}>
-        <form onSubmit={this._onSubmit}>
-          <InputGroup className={'search-text-input'}>
-            <Form.Control
-              className={'searchbox'}
-              onChange={onChange}
-              value={value}
-              disabled={disabled}
-              placeholder={placeholder}
-              rows={1}
-              type={'text'}
-              name={this.props.name}
-            />
-            <div
-              onClick={value ? this._onClear : this._onSubmit}
-              className={'endcap'}
-              style={value ? { cursor: 'pointer' } : {}}
-            >
-              <i className={cns('fas', 'fa-fw', { 'fa-search': !value }, { 'fa-times-circle': value })} />
-            </div>
-          </InputGroup>
-        </form>
-      </div>
+      <form onSubmit={this._onSubmit} className={'search'}>
+        <i
+          className={cns('search__icon fas fa-fw', { 'fa-search': !value }, { 'fa-times-circle': value })}
+          style={value ? { cursor: 'pointer' } : {}}
+          onClick={value ? this._onClear : this._onSubmit}
+        />
+        <input
+          className={'search__input'}
+          onChange={onChange}
+          value={value}
+          disabled={disabled}
+          placeholder={placeholder}
+          rows={1}
+          type={'text'}
+          name={this.props.name}
+        />
+      </form>
     );
   }
 }

@@ -1,11 +1,18 @@
+@import url('./App.css');
 @import url('./DropzoneFileUpload.css');
 @import url('./SearchTextInput.css');
 @import url('./AddOrEditFile.css');
 @import url('./ManageFiles.css');
+@import url('./Buttons.css');
 
-#moogle-drive {
-  margin-top: 40px;
-  margin-bottom: 80px;
+html {
+  font-size: 12px;
+}
+
+body {
+  background-color: #E4EBF5;
+  padding-top: 40px;
+  padding-bottom: 80px;
 }
 
 table > td {

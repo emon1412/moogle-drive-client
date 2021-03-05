@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { values, isEmpty } from 'lodash';
@@ -147,9 +146,9 @@ class ManageFiles extends Component {
       <div id={'manage-files'}>
         <h3>Manage Files</h3>
         <div className={'controls-row'}>
-          <Button variant={'outline-primary'} onClick={() => history.push('/newfile')}>
-            ADD FILE
-          </Button>
+          <button className={'btn'} onClick={() => history.push('/newfile')}>
+            Add File
+          </button>
           <SearchTextInput
             onChange={this._onSearchQueryChange}
             value={searchQuery}
